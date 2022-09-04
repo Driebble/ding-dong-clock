@@ -1,54 +1,119 @@
 import schedule
 import time
-from playsound import playsound
+import pygame
+
+pygame.init()
+pygame.mixer.init()
+
+vol = 0.25
 
 def job0():
-    playsound('media/127107__joedeshon__grandfather-clock-chime-12.wav')
+    sound = pygame.mixer.Sound("media/127107__joedeshon__grandfather-clock-chime-12.wav")
+    sound.set_volume(vol)
+    sound.play()
     print("Ding dong!")
+    time.sleep(38)
+    sound.fadeout(5000)
+    print("Stopped.")
 
 def job1():
-    playsound('media/127096__joedeshon__grandfather-clock-chime-01.wav')
+    sound = pygame.mixer.Sound("media/127096__joedeshon__grandfather-clock-chime-01.wav")
+    sound.set_volume(vol)
+    sound.play()
     print("Ding dong!")
+    time.sleep(16)
+    sound.fadeout(5000)
+    print("Stopped.")
 
 def job2():
-    playsound('media/127097__joedeshon__grandfather-clock-chime-02.wav')
+    sound = pygame.mixer.Sound('media/127097__joedeshon__grandfather-clock-chime-02.wav')
+    sound.set_volume(vol)
+    sound.play()
     print("Ding dong!")
+    time.sleep(18)
+    sound.fadeout(5000)
+    print("Stopped.")
 
 def job3():
-    playsound('media/127098__joedeshon__grandfather-clock-chime-03.wav')
+    sound = pygame.mixer.Sound('media/127098__joedeshon__grandfather-clock-chime-03.wav')
+    sound.set_volume(vol)
+    sound.play()
     print("Ding dong!")
+    time.sleep(20)
+    sound.fadeout(5000)
+    print("Stopped.")
 
 def job4():
-    playsound('media/127099__joedeshon__grandfather-clock-chime-04.wav')
+    sound = pygame.mixer.Sound('media/127099__joedeshon__grandfather-clock-chime-04.wav')
+    sound.set_volume(vol)
+    sound.play()
     print("Ding dong!")
+    time.sleep(22)
+    sound.fadeout(5000)
+    print("Stopped.")
 
 def job5():
-    playsound('media/127100__joedeshon__grandfather-clock-chime-05.wav')
+    sound = pygame.mixer.Sound('media/127100__joedeshon__grandfather-clock-chime-05.wav')
+    sound.set_volume(vol)
+    sound.play()
     print("Ding dong!")
+    time.sleep(24)
+    sound.fadeout(5000)
+    print("Stopped.")
 
 def job6():
-    playsound('media/127101__joedeshon__grandfather-clock-chime-06.wav')
+    sound = pygame.mixer.Sound('media/127101__joedeshon__grandfather-clock-chime-06.wav')
+    sound.set_volume(vol)
+    sound.play()
     print("Ding dong!")
+    time.sleep(26)
+    sound.fadeout(5000)
+    print("Stopped.")
 
 def job7():
-    playsound('media/127102__joedeshon__grandfather-clock-chime-07.wav')
+    sound = pygame.mixer.Sound('media/127102__joedeshon__grandfather-clock-chime-07.wav')
+    sound.set_volume(vol)
+    sound.play()
     print("Ding dong!")
+    time.sleep(28)
+    sound.fadeout(5000)
+    print("Stopped.")
 
 def job8():
-    playsound('media/127103__joedeshon__grandfather-clock-chime-08.wav')
+    sound = pygame.mixer.Sound('media/127103__joedeshon__grandfather-clock-chime-08.wav')
+    sound.set_volume(vol)
+    sound.play()
     print("Ding dong!")
+    time.sleep(30)
+    sound.fadeout(5000)
+    print("Stopped.")
 
 def job9():
-    playsound('media/127104__joedeshon__grandfather-clock-chime-09.wav')
+    sound = pygame.mixer.Sound('media/127104__joedeshon__grandfather-clock-chime-09.wav')
+    sound.set_volume(vol)
+    sound.play()
     print("Ding dong!")
+    time.sleep(32)
+    sound.fadeout(5000)
+    print("Stopped.")
 
 def job10():
-    playsound('media/127105__joedeshon__grandfather-clock-chime-10.wav')
+    sound = pygame.mixer.Sound('media/127105__joedeshon__grandfather-clock-chime-10.wav')
+    sound.set_volume(vol)
+    sound.play()
     print("Ding dong!")
+    time.sleep(34)
+    sound.fadeout(5000)
+    print("Stopped.")
 
 def job11():
-    playsound('media/127106__joedeshon__grandfather-clock-chime-11.wav')
+    sound = pygame.mixer.Sound('media/127106__joedeshon__grandfather-clock-chime-11.wav')
+    sound.set_volume(vol)
+    sound.play()
     print("Ding dong!")
+    time.sleep(36)
+    sound.fadeout(5000)
+    print("Stopped.")
 
 schedule.every().day.at("00:00").do(job0)
 schedule.every().day.at("01:00").do(job1)
