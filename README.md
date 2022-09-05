@@ -8,4 +8,4 @@ Simple Python script that plays grandfather clock chimes every hour.
 
 ## Credits
 
-All grandfather's clock sounds are from [Joe DeShon's](http://www.joedeshon.com) [Grandfather Clock Pack](https://freesound.org/people/joedeshon/packs/7926/)
+All the grandfather clock sounds are from [Joe DeShon](http://www.joedeshon.com)'s [Grandfather Clock Pack](https://freesound.org/people/joedeshon/packs/7926/)
